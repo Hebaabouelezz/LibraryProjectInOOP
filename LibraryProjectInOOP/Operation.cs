@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,11 +15,12 @@ namespace LibraryProjectInOOP
             this.Id = id;
         }
 
-        public void OperationInfo()
+        public override void UserInfo()
         {
-            OwnerInfo();
+           base.UserInfo();
             Console.WriteLine($"Id :{this.Id}");
 
         }
     }
 }
+
