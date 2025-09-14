@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,7 +8,7 @@ namespace LibraryProjectInOOP
 {
     public abstract class Users
     {
-        public  string Name { get; }
+        public  string Name { get; set; }
         
         
 
@@ -19,9 +19,10 @@ namespace LibraryProjectInOOP
 
         }
 
-        public void UserInfo() {
+        public virtual void UserInfo() {
 
             Console.WriteLine($"Name :{this.Name}");
         }
     }
 }
+
