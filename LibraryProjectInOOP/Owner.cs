@@ -17,11 +17,12 @@ namespace LibraryProjectInOOP
            this. Email = email;
         }
 
-        public void OwnerInfo()
+        public override void UserInfo()
         {
-            UserInfo();
+           base.UserInfo();
             Console.WriteLine($"password :{this.Password}, Email :{this.Email}");
 
         }
     }
 }
+
