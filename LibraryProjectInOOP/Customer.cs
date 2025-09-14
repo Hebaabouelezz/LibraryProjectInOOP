@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,9 +19,9 @@ namespace LibraryProjectInOOP
             this.PhoneNumber = phoneNumber;
         }
 
-        public void CustomerInfo()
+        public override void UserInfo()
         {
-            OperationInfo();
+            base.UserInfo();
             Console.WriteLine($"borrowlimit :{this.BorrowLimit}");
             
         }
